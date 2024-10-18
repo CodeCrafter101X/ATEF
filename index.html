@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أفلام الأنمي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>أفلام الأنمي</h1>
+        </header>
+
+        <div class="video-viewer">
+            <div class="video-container">
+                <video id="animeVideo" controls>
+                    <source src="your_video.mp4" type="video/mp4">
+                    متصفحك لا يدعم الفيديو.
+                </video>
+                <div class="video-controls">
+                    <button id="playPauseBtn"><i class="fas fa-play"></i> تشغيل</button>
+                    <button id="muteBtn"><i class="fas fa-volume-mute"></i> كتم الصوت</button>
+                    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+                    <button id="rewindBtn"><i class="fas fa-undo"></i> تراجع 10 ثواني</button>
+                    <button id="forwardBtn"><i class="fas fa-redo"></i> تقدم 10 ثواني</button>
+                </div>
+                <div class="live-indicator">بث مباشر</div>
+            </div>
+        </div>
+
+        <div class="video-list">
+            <h2>قائمة الفيديوهات</h2>
+            <div id="videoItems">
+                <!-- يمكن إضافة 50 فيديو هنا -->
+                <div class="video-item">
+                    <img src="path/to/image1.jpg" alt="عنوان الفيديو 1">
+                    <div class="title">عنوان الفيديو 1</div>
+                </div>
+                <div class="video-item">
+                    <img src="path/to/image2.jpg" alt="عنوان الفيديو 2">
+                    <div class="title">عنوان الفيديو 2</div>
+                </div>
+                <div class="video-item">
+                    <img src="path/to/image3.jpg" alt="عنوان الفيديو 3">
+                    <div class="title">عنوان الفيديو 3</div>
+                </div>
+                <!-- أضف المزيد من الفيديوهات هنا -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
